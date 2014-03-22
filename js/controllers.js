@@ -24,12 +24,21 @@ checkerApp.controller('CheckerCtrl', function($scope) {
 	
 	
 	$scope.clickSquare = function(cell) {
-		debugger;
 		if(!cell.on) {
 			return;
 		}
 		
-		$scope.clicked.x = cell.x;
-		$scope.clicked.y = cell.y;
+		if ( $scope.clicked.x !== undefined ) {
+			var c = $scope.clicked;
+			var from = $scope.grid[	c.y ][ c.x ];
+			var p = from.piece;
+			var to = $scope.grid[ cell.y ][ cell.x ];
+			to.piece = p;
+			from.piece = 0;
+			$scope.clicked.x = undefined;
+		} else {
+			$scope.clicked.x = cell.x;
+			$scope.clicked.y = cell.y;
+		}
 	};
 });
