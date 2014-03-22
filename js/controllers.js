@@ -2,7 +2,7 @@
 
 var checkerApp = angular.module('checkerApp', []);
 
-chekerApp.controller('CheckerCtrl', function($scope) {
+checkerApp.controller('CheckerCtrl', function($scope) {
 	var grid = [];
 	var a = true;
 	for(var i=0;i<8;i++){
