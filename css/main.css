@@ -12,3 +12,7 @@ tr.row-even td.col-even,
 tr.row-odd td.col-odd {
 	background-color: green;	
 }
+
+td.is-spot {
+	background-color: yellow !important;
+}
