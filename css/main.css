@@ -4,16 +4,6 @@ td {
 	border: 1px solid #ccc;
 }
 
-tr.row-odd td.col-odd,
-tr.row-even td.col-even {
-	background-color: red;	
-}
-
-tr.row-even td.col-even,
-tr.row-odd td.col-odd {
-	background-color: green;	
-}
-
 td.is-spot {
-	background-color: yellow !important;
+	background-color: yellow;
 }

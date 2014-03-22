@@ -11,6 +11,7 @@ checkerApp.controller('CheckerCtrl', function($scope) {
 			a = !a;
 			c.push({color:a});
 		}
+		a = !a;
 		grid.push(c);
 	}
 	
