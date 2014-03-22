@@ -20,7 +20,7 @@
 <body>
   <table>
       <tr ng-repeat="i in [1, 2, 3, 4, 5, 6, 7, 8]" ng-class="{'row-odd': i%2==0, 'row-even': i%2==1}">
-          <td ng-repeat="j in [1, 2, 3, 4, 5, 6, 7, 8]" ng-class="{'col-odd': j%2==0, 'row-even': j%2==1, 'is-spot': (i*8+j)%2==0}">
+          <td ng-repeat="j in [1, 2, 3, 4, 5, 6, 7, 8]" ng-class="{'col-odd': j%2==0, 'row-even': j%2==1, 'is-spot': (j*8+i)%2==0}">
 
           </td>
       </tr>
