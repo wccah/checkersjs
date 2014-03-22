@@ -4,6 +4,29 @@ td {
 	border: 1px solid #ccc;
 }
 
-td.is-spot {
-	background-color: yellow;
+td:hover {
+	opacity: 0.3;	
+}
+
+.is-spot {
+	background-color: orange;
+}
+
+.is-clicked {
+	background-color: blue;
+}
+
+div {
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	margin-left: 2.5px;
+}
+
+div.player-1 {
+	background-color: green;	
+}
+
+div.player-2 {
+	background-color: red;	
 }

@@ -12,16 +12,17 @@
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
-  
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.js"></script>
-  
+  <!--
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.js"></script> 
+  -->
+  <script type="text/javascript" src="lib/angular.js"></script>
   <script type="text/javascript" src="js/controllers.js"></script>
 </head>
 <body>
   <table>
       <tr ng-repeat="c in grid">
-          <td ng-repeat="r in c" ng-class="{'is-spot': r.color}">
-
+          <td ng-repeat="r in c" ng-class="{'is-spot': r.on, 'is-clicked': clicked.x==r.x && clicked.y==r.y}" ng-click="clickSquare(r)">
+              <div ng-class="{'player-1': r.piece<0, 'player-2': r.piece>0, 'king': r.piece==2||r.piece==-2}"></div>
           </td>
       </tr>
   </table>
