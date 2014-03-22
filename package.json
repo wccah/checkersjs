@@ -1,0 +1,10 @@
+{
+	"name": "checkersjs",
+	"version": "0.0.1",
+	"description": "checkers js",
+	"main":	"server.js",
+	"author": "wccah",
+	"dependencies":{
+
+	}
+}
