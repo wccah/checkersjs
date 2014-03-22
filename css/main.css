@@ -1,6 +1,7 @@
 td {
 	width: 20px;
 	height: 20px;
+	border: 1px solid #ccc;
 }
 
 tr.row-odd td.col-odd,
