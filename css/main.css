@@ -1,0 +1,14 @@
+td {
+	width: 20px;
+	height: 20px;
+}
+
+tr.row-odd td.col-odd,
+tr.row-even td.col-even {
+	background-color: red;	
+}
+
+tr.row-even td.col-even,
+tr.row-odd td.col-odd {
+	background-color: green;	
+}
